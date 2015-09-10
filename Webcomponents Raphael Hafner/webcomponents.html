@@ -123,7 +123,7 @@
                 <h2>Wie funktionieren Web Components</h2>
                 <h3>Shadow DOM</h3>
                     wird mit JavaScript erstellt:
-                    <pre><code class="html" data-trim contenteditable>
+                    <code>
 <div class="custom-component"></div>
 
 <script>
@@ -131,7 +131,7 @@
     var root = host.createShadowRoot();
     root.innerHTML = '<p>Das ist der Inhalt vom Div "custom-component"</p>'
 </script>
-					   </code></pre>
+					   </code>
                 </section>
                 
            
@@ -140,26 +140,26 @@
                 <h1>Demo</h1>
                 <section>
                     <h4>1.Schritt: Deklarieren einer Custom-Component</h4>
-                        <pre><code class="html" data-trim contenteditable>
+                        <code>
 <div class="custom-component"></div>
 </code></pre>
                 </section>
                 
                 <section>
                     <h4>2.Schritt: Erstellen des Templates</h4>
-                        <pre><code class="html" data-trim contenteditable>
+                        <code>
 <div class="custom-component"></div>
 
 <template>
     <h1>Demo</h1>
     <img src="giphy.gif">
 </template> 
-					   </code></pre>
+					   </code>
                 </section>
                 
                 <section>
                     <h4>3.Schritt: Verknüpfen von Template und Custom-Component im Shadow DOM</h4>
-                <pre><code class="html" data-trim contenteditable>
+                <code>
 <div class="custom-component"></div>
 
 <template>
@@ -173,7 +173,7 @@
     var root = host.createShadowRoot();
     root.appendChild(document.importNode(tmpl.content, true));
 </script>
-					   </code></pre>
+					   </code>
                 
                 </section>
                 </section>
